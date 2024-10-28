@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Anggota Perpustakaan</title>
+  <style>
+    body {
+      background: url(maxresdefault.jpg)no-repeat fixed ;
+      background-size: cover;
+      padding: 0;
+      margin: 0;
+      opacity: 0.85;
+    }
+  .container{
+    background-color: grey;
+    border: dashed 4px white;
+    border-radius: 20px;
+    padding:20px 30px;
+    width: 75%;
+    height: 75%;
+    margin: 50px auto;
+    text-align: justify;
+
+    }
+
+    .input{
+      margin: auto;
+    }
+
+      .input input,
+      .input select,
+      .input textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+      }
+
+      .input .inline {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .input .inline input {
+        width: auto;
+      }
+
+      .input .inline label {
+        color: white;
+      }
+    
+
+    .input h2 {
+      text-align: center;
+      border-bottom:2px dashed white;
+      color: white;
+      padding: 0%;
+    }
+
+    .input label{
+      color: white;
+    }
+
+    .btn {
+      display: block ;
+      text-align: center;
+      padding: 10px
+      
+      
+    }
+
+    .btn button {
+      width: 100px;
+      height: 25px;
+    }
+
+   html,
+   body {
+    height: 100%;
+    overflow: hidden;
+   }
+    
+  
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="input">
+    <h2>Formulir Anggota Perpustakaan</h2>
+    <form>
+      <div class="input">
+      <label for="nama">Nama:</label><br> 
+      <input type="text" placeholder="Nama Lengkap Anda"> 
+      </div>
+
+     
+        <div class="input">
+        <label for="Kota">Kota Lahir:</label><br>
+        <input type="text" list="kota-lahir" placeholder="Kota Lahir Anda">
+        <datalist id="kota-lahir">
+          <option value="Semarang">Semarang</option>
+          <option value="Jakarta">Jakarta</option>
+          <option value="Jogja">Jogja</option>
+          <option value="Salatiga">Salatiga</option>
+          <option value="Solo">Solo</option>
+        </datalist>
+      </div>
+     
+
+      <div class="input">
+        <label for="Tanggal">Tempat Tanggal Lahir:</label><br>
+        <input type="date">
+      </div>
+
+      
+        <div class="input">
+        <label>Gender:</label><br>
+        <div class="inline">
+          <input type="radio" name="kelamin" id="pria">Pria
+        <input type="radio" name="kelamin" id="wanita">Wanita
+        </div>
+        
+      </div>
+    
+    
+    <div class="input">
+      <label for="tlp">No Telpon:</label><br>
+      <input type="number" placeholder="Nomor Telpon Anda">
+    </div>
+
+    <div class="input">
+      <label for="buku_fav">Buku Favorit:</label><br>
+      <div class="inline">
+      <input type="checkbox" name="buku_fav" value="The Alchemist">The Alchemist
+      <input type="checkbox" name="buku_fav" value="Why We Sleep">Why We Sleep
+    </div>
+    </div>
+
+    
+    <label for="agama">Agama</label><br />
+    <select id="agama" name="agama">
+      <option value="Islam">Islam</option>
+      <option value="Kristen">Kristen</option>
+      <option value="Katholik">Katholik</option>
+      <option value="Hindu">Hindu</option>
+      <option value="Buddha">Buddha</option>
+      <option value="Konghucu">Konghucu</option>
+    </select>
+    
+    
+    <div class="input">
+      <label for="alamat">Alamat:</label><br>
+      <textarea placeholder="Alamat rumah Anda"></textarea>
+    </div>
+    
+    <div class="btn">
+      <button type="submit">Clear</button>
+      <button type="submit">Send</button>
+    </div>
+  </div>
+  </form>
+</body>
+</html>
